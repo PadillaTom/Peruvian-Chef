@@ -31,7 +31,7 @@ SWISS: Al hover : Buscar online Gallery Hover Images.
 -------------------------------------------------------------
 ::::: Components
 
-Navbar --> Nyu
+Navbar --> Termine haciendo la de PORTFOLIO p3 ( Intentar meter la hamburguer de nyu)
 Sidebar --> Nyu
 Footer --> p3 portfolio
 

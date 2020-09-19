@@ -1,3 +1,5 @@
+/* Fonts */
+
 /* Globals */
 * {
   margin: 0;
@@ -10,13 +12,14 @@ a {
 ul {
   list-style: none;
 }
-
 /* Variables */
 :root {
   --MainColor: crimson;
   --SecondaryColor: wheat;
+  --MainGrey: #313030;
   --MainTransition: 0.3s linear all;
 }
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* Navbar */
 .nav-header {
   color: white;
@@ -84,3 +87,52 @@ ul {
     color: var(--MainColor);
   }
 }
+/* End Navbar */
+/* Sidebar */
+.sidebar {
+  position: fixed; /* Ocupe todo */
+  top: 0; /* Ocupe todo */
+  left: 0; /* Ocupe todo */
+  width: 100%; /* Ocupe todo */
+  height: 100%; /* Ocupe todo */
+  background-color: var(--MainGrey);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* Animation */
+  transition: 0.5s ease-in-out all;
+  /* transform: translateX(-100%); */
+}
+.sidebar-links {
+  text-align: center;
+}
+
+.sidebar-links a {
+  font-size: 3rem;
+  text-transform: uppercase;
+  transition: var(--MainTransition);
+  color: white;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.social-icons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
+  transition: var(--MainTransition);
+}
+.social-icon:hover {
+  color: var(--MainColor);
+}
+.close-btn {
+  position: absolute; /*Para poder Moverlo donde querramos*/
+  top: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+}
+
+/* End Sidebar */
