@@ -1,9 +1,174 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Globals */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-h1 {
-  color: red;
+html {
+  font-family: 'Montserrat', sans-serif;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  min-height: 100vh;
+  width: 90vw;
+}
+ul {
+  list-style: none;
+}
+/* Variables */
+:root {
+  --MainTrans: all 0.3s linear;
+  --MainColor: crimson;
+  --SecondaryColor: wheat;
+}
+
+/* Navbar Section */
+.nav {
+  height: 5rem;
+  padding: 1rem;
+  background-color: rgba(5, 0, 0, 0.255);
+}
+.nav-center {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 3rem;
+  width: 100%;
+  height: 100%;
+}
+.logo {
+  color: white;
+  letter-spacing: 2px;
+}
+.logo span {
+  color: var(--MainColor);
+}
+/*Mobile Sidebar*/
+.nav-links {
+  position: absolute; /*To be on TOP*/
+  background-color: rgb(31, 30, 30);
+  width: 100vw; /*Ocupy whole screen*/
+  height: 100%; /*Ocupy whole screen*/
+  left: 0; /*strating from */
+  top: 0; /*strating from */
+  z-index: 1000; /*On top of Everything*/
+  display: flex; /*Links disposition*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-links a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* End Navbar Section */
+
+/* Hero Section */
+#hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('../Resources/chef2.jpg') center/cover no-repeat fixed;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3.5rem;
+}
+.hero h1 {
+  color: transparent;
+  font-size: 2.5rem;
+  position: relative;
+  /* Para Que ocupe solamente su espacio y NADA MAS */
+  display: block;
+  width: fit-content;
+  /* Animation text reveal TEXT */
+  animation: text_reveal_text 0.5s ease-in forwards;
+}
+.span-color {
+  color: transparent;
+  animation: text_reveal_name 2s ease-in forwards;
+}
+.cta {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  color: var(--SecondaryColor);
+  border: 2px solid var(--MainColor);
+  background: transparent;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 520;
+  transition: var(--MainTrans);
+}
+.cta:hover {
+  background: var(--MainColor);
+  cursor: pointer;
+}
+
+/* Text Reveal SPANS */
+.span-ani {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--MainColor);
+  animation: text_reveal_box 1.3s ease-in;
+}
+.hero h1:nth-child(1) span {
+  animation-delay: 0.5s;
+}
+.hero h1:nth-child(2) span {
+  animation-delay: 1.5s;
+}
+.hero h1:nth-child(3) span {
+  animation-delay: 2.5s;
+}
+.hero h1:nth-child(1) {
+  animation-delay: 1s;
+}
+.hero h1:nth-child(2) {
+  animation-delay: 2.2s;
+}
+.hero h1:nth-child(3) {
+  animation-delay: 2s;
+}
+
+/* Text Reveal BOX Keyframes (for ani1, 2 and 3) */
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+/* Text Reveal TEXT (To show after the span) */
+@keyframes text_reveal_text {
+  100% {
+    color: white;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: var(--MainColor);
+  }
+}
+/* End Hero Section */
+
+/* About Section */
+.about-section {
+  height: 100vh;
+}
+/* End About Section */
