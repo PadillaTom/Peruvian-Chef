@@ -1,0 +1,43 @@
+::::: Pages
+
+Home --> 
+NYU: 
+Foto, Introduccion, BTN: Menu
+
+About Us --> Comida Peru o Hans o Cultura Peru
+BEER GOOD: About Us
+Foto, Title, Subtitle, Text, BTN: Menu, Back to top
+
+Platos Mas Conocidos-->   
+BEER GOOD: Our Ingredients
+Title, Card (Foto, Icon, Titulo, Desc,BTN: ver MENUCompleto) 
+
+Productos -->  
+BEER GOOD: Products
+Mobile:
+Foto, Name, tiny Desc (p, color claro)
+Desktop: Hover de Latest Works de p3 test portfolio
+
+** MENU-->
+** Buscar Online webpage
+** Download PDF
+
+Contact -->
+BEER GOOD: Formspree
+
+Gallery antes del footer --> 
+SWISS: Al hover : Buscar online Gallery Hover Images.
+
+-------------------------------------------------------------
+::::: Components
+
+Navbar --> Nyu
+Sidebar --> Nyu
+Footer --> p3 portfolio
+
+-------------------------------------------------------------
+
+
+
+
+
