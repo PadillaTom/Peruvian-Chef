@@ -75,7 +75,7 @@ ul {
 /* Hero Section */
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url('../Resources/chef2.jpg') center/cover no-repeat fixed;
+    url('../Resources/chef4.jpg') center/cover no-repeat fixed;
 }
 .hero {
   display: flex;
