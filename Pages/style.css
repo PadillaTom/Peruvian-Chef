@@ -1,16 +1,23 @@
 /* Fonts */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 /* Globals */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: 'Montserrat', sans-serif;
+}
 a {
   text-decoration: none;
 }
 ul {
   list-style: none;
+}
+.btn {
+  cursor: pointer;
+  transition: var(--MainTransition);
 }
 /* Variables */
 :root {
@@ -19,15 +26,34 @@ ul {
   --MainGrey: #313030;
   --MainTransition: 0.3s linear all;
 }
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* Navbar */
 .nav-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  justify-content: space-between;
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
-.nav-header span {
+.nav-text {
+  font-size: 0.8rem;
+}
+.nav-text span {
   color: var(--MainColor);
+  font-size: 2rem;
 }
 .nav-links {
   display: none;
@@ -38,16 +64,13 @@ ul {
   display: grid;
   align-items: center;
   transition: var(--MainTransition);
+  position: absolute;
+  width: 100%;
 }
 .nav-center {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
-}
-.nav-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
 }
 .nav-btn {
   background: transparent;
@@ -58,14 +81,20 @@ ul {
   justify-self: end;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 850px) {
   .nav {
     background: rgba(0, 0, 0, 0.255);
+    height: 4.5rem;
+  }
+  .nav-text {
+    width: 100%;
+    white-space: nowrap;
   }
   .nav-btn {
     display: none;
   }
   .nav-center {
+    transform: translateY(-10%);
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -80,7 +109,7 @@ ul {
   .nav-links a {
     text-transform: uppercase;
     color: white;
-    font-weight: 600;
+    font-weight: 350;
     transition: var(--MainTransition);
   }
   .nav-links a:hover {
@@ -101,7 +130,8 @@ ul {
   align-items: center;
   /* Animation */
   transition: 0.5s ease-in-out all;
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
+  z-index: 1;
 }
 .sidebar-links {
   text-align: center;
@@ -123,7 +153,7 @@ ul {
 .social-icon {
   color: white;
   font-size: 1.5rem;
-  transition: var(--MainTransition);
+  transition: 0.2s ease all;
 }
 .social-icon:hover {
   color: var(--MainColor);
@@ -133,6 +163,74 @@ ul {
   top: 1rem;
   right: 1rem;
   font-size: 3rem;
+  background: transparent;
+  cursor: pointer;
+  border: transparent;
+  color: var(--MainColor);
+  transition: var(--MainTransition);
 }
-
+.close-btn:hover {
+  transform: scale(1.3);
+}
+.show-sidebar {
+  transform: translateX(0);
+}
 /* End Sidebar */
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('../Resources/chef4.jpg') center/cover fixed no-repeat;
+}
+.hero-center {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.hero-info {
+  transform: translateY(20%);
+  font-size: 1.25rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-info span {
+  color: var(--MainColor);
+}
+.hero-btn {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  border: 2px solid var(--MainColor);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  margin-top: 3rem;
+}
+.hero-btn:hover {
+  background-color: var(--MainColor);
+}
+@media screen and (min-width: 850px) {
+  .hero-center {
+    align-items: center;
+    justify-content: left;
+  }
+  .hero-info {
+    letter-spacing: 2px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .hero-info h1 {
+    margin-top: 0.5rem;
+  }
+}
+/* End Hero Section */
+
+/* About Section */
+.section {
+  min-height: 100vh;
+}
+/* End About Section */
