@@ -19,12 +19,18 @@ ul {
   cursor: pointer;
   transition: var(--MainTransition);
 }
-/* Variables */
-:root {
-  --MainColor: crimson;
-  --SecondaryColor: wheat;
-  --MainGrey: #313030;
-  --MainTransition: 0.3s linear all;
+.section-title {
+  color: var(--MainColor);
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin: 3rem 1rem 0 1rem;
+}
+.section-subtitle {
+  color: #272727;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin: 0.5rem 0 0 1rem;
 }
 .section-center {
   width: 90vw;
@@ -35,6 +41,25 @@ ul {
   .section-center {
     width: 95vw;
   }
+}
+.content-divider {
+  height: 0.4rem;
+  background: linear-gradient(
+    to left,
+    var(--MainColor),
+    rgb(197, 189, 175),
+    var(--MainColor),
+    rgb(197, 189, 175),
+    var(--MainColor)
+  );
+}
+/* Variables */
+:root {
+  --MainColor: crimson;
+  --SecondaryColor: wheat;
+  --MainGrey: #313030;
+  --MainTransition: 0.3s linear all;
+  --BgColor: #e4e4da;
 }
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* Navbar */
@@ -197,6 +222,9 @@ ul {
 .hero-info span {
   color: var(--MainColor);
 }
+.hero-btn a {
+  color: white;
+}
 .hero-btn {
   font-size: 1.5rem;
   letter-spacing: 2px;
@@ -230,7 +258,151 @@ ul {
 /* End Hero Section */
 
 /* About Section */
-.section {
+.about {
   min-height: 100vh;
+  background-color: var(--BgColor);
+}
+.about-img {
+  display: none;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-description {
+  max-width: 50vw;
+  letter-spacing: 2px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.7rem;
+}
+.about-btn {
+  color: var(--MainColor);
+  font-size: 2rem;
+  letter-spacing: 0.7rem;
+  transition: var(--MainTransition);
+  margin-top: 2.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--MainColor);
+  border-radius: 1rem;
+}
+.about-btn:hover {
+  background-color: var(--MainColor);
+  color: wheat;
+}
+@media screen and (min-width: 900px) {
+  .about {
+    min-height: auto;
+    padding-bottom: 4rem;
+  }
+  .about-img {
+    margin-top: 5rem;
+    display: block;
+  }
+  .about-photo-container {
+    background: var(--MainColor);
+    border: 0.5rem solid var(--MainColor);
+    margin-left: 3rem;
+
+    max-width: 35rem;
+    overflow: hidden;
+  }
+  .about-photo {
+    width: 100%;
+    transition: var(--MainTransition);
+  }
+  .about-photo-container:hover .about-photo {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  .about-info {
+    margin-right: 1rem;
+  }
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-btn {
+    white-space: nowrap;
+  }
 }
 /* End About Section */
+/* Plats */
+.plats {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../Resources/machu2.jpg') center/cover no-repeat fixed;
+}
+.section-container-plats {
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plats-sub {
+  color: wheat;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.plat-card {
+  margin: 2rem 0;
+  background-color: var(--BgColor);
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+  transition: var(--MainTransition);
+}
+.plat-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.6);
+}
+.plat-img {
+  height: 17rem;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+}
+.plat-info {
+  text-align: center;
+  padding: 2rem 2.5rem 3rem 2.5rem;
+}
+.plat-info h4 {
+  color: var(--MainColor);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.plat-info p {
+  letter-spacing: 2px;
+  max-width: 20rem;
+  min-width: 15rem;
+  margin: 0 auto;
+  margin-bottom: 1.75rem;
+  color: #4f4e4e;
+}
+.card-btn {
+  border: 2px solid var(--MainColor);
+  margin-bottom: 1rem;
+  color: var(--MainColor);
+  padding: 0.7rem 2.25rem;
+  text-transform: uppercase;
+  background-color: var(--MainColor);
+  border-radius: 15rem;
+  color: wheat;
+}
+@media screen and (min-width: 768px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+    row-gap: 1rem;
+  }
+}
+
+/* End Plats */
