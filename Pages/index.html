@@ -27,11 +27,11 @@
         </div>
         <!-- links -->
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Plats</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#plats">Gastronomy</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -44,11 +44,11 @@
         </button>
           <!-- links -->
           <ul class="sidebar-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Plats</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#plats">Gastronomy</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
           <!-- social icons -->
           <ul class="social-icons">
@@ -61,7 +61,7 @@
     </aside>
     <!-- End Sidebar -->
     <!-- Hero -->
-    <header class="hero">
+    <header class="hero" id="hero">
       <div class="section-center hero-center">
         <div class="hero-info">
           <h1>Hi,</h1>
@@ -105,7 +105,7 @@
         <section class="plats" id="plats">
             <!-- Section Title -->
            <div class="section-container-plats">
-              <div class="section-title">
+              <div class="section-title dishes-title">
                 <h2>Main Dishes</h2>
               </div>
               <h4 class="section-subtitle plats-sub">Traditional and Nikkei</h4>
@@ -166,8 +166,105 @@
               </div>
               </div>
         </section>
-
         <!-- End Plats -->
+         <!-- Newsletter -->
+         <section class="newsletter">
+           <article class="news-info">
+             <h2>Want more information?</h2>
+             <h6>Get in touch!</h6>
+           </article>
+           <article class="submit">
+             <form class="news-form">
+               <input type="text" class="news-input" placeholder="Your email">
+               <button type="submit" class="btn-news">Submit</button>
+             </form>
+           </article>
+         </section>
+         <!-- End Newsletter -->
+          <!-- Image Gallery -->
+          <section id="gallery">
+            <div class="gallery-center">
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/cerro1.jpg" class="gallery-img" alt="gallery-img">
+              </article>
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/choclo1.jpg"  class="gallery-img" alt="gallery-img">
+              </article>
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/cholo1.jpg"  class="gallery-img"alt="gallery-img">
+              </article>
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/cholo2.jpg" class="gallery-img" alt="gallery-img">
+              </article>
+             
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/machu1.jpg" class="gallery-img" alt="gallery-img">
+              </article>
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/machu3.jpg" class="gallery-img" alt="gallery-img">
+              </article>
+              
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/persona1.jpg" class="gallery-img" alt="gallery-img">
+              </article>
+              <article class="gallery-img-container">
+                <img src="../Resources/Gallery/rials1.jpg" class="gallery-img" alt="gallery-img">
+              </article>
+            </div>
+          </section>
+          <!-- End Image Gallery -->
+          <!-- Division -->
+          <div class="content-divider"></div>
+          <!-- Contact Form -->
+          <section class="section-center">
+            <!-- Section Title -->
+            <article class="about-info">
+              <div class="section-title">
+                <h2>Contact Us</h2>
+              </div>
+              <h4 class="section-subtitle">Get in touch</h4>
+              <!-- End title -->
+            <div class="contact-container">
+              <article class="contact-info">
+                <!-- item -->
+                <div class="single-info">
+                  <!-- icon -->
+                  <h4>Adress</h4>
+                  <h3>Lorem ipsum dolor sit amet.</h3>
+                </div>
+                <!-- End Item -->
+                <!-- item -->
+                <div class="single-info">
+                  <!-- icon -->
+                  <h4>Email</h4>
+                  <h3>Lorem@lorem.com</h3>
+                </div>
+                <!-- End Item -->
+                <!-- item -->
+                <div class="single-info">
+                  <!-- icon -->
+                  <h4>Mobile</h4>
+                  <h3>+41 00 000 00 00</h3>
+                </div>
+                <!-- End Item -->
+              </article>
+              
+                <article class="contact-form-container">
+                  <div class="form-title">
+                    <h4>Contact Form</h4>
+                  </div>
+                  <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" class="inp-control">
+                    <input type="email" name="email" placeholder="Your Email" class="inp-control">
+                    <textarea name="message"  rows="10" placeholder="Your message..." class="inp-control"></textarea>
+                    <button type="submit" class="btn-form">Ask for Info</button>
+                  </form>
+                  </article>
+                
+             
+            </div>
+          </section>
+          <!-- End Contact Form -->
     <!-- JS -->
     <script src="./app.js"></script>
   </body>
