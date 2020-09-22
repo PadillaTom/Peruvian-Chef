@@ -336,7 +336,7 @@ ul {
 }
 .about-btn:hover {
   background-color: var(--MainColor);
-  color: wheat;
+  color: white;
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -443,7 +443,7 @@ ul {
   text-transform: uppercase;
   background-color: var(--MainColor);
   border-radius: 15rem;
-  color: wheat;
+  color: white;
 }
 .card-btn:hover {
   background: transparent;
