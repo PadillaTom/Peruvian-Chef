@@ -12,3 +12,11 @@ navBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   sideBar.classList.remove('show-sidebar');
 });
+// Fixed Navbar
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 160) {
+    navBar.classList.add('navbar-fixed');
+  } else {
+    navBar.classList.remove('navbar-fixed');
+  }
+});
