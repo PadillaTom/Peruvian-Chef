@@ -110,6 +110,7 @@ ul {
   .nav {
     background: rgba(0, 0, 0, 0.255);
     height: 4.5rem;
+    transition: var(--MainTransition);
   }
   .nav-text {
     width: 100%;
@@ -140,16 +141,17 @@ ul {
   .nav-links a:hover {
     color: var(--MainColor);
   }
+  .navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
-.navbar-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
-  background-color: rgba(0, 0, 0, 0.9);
-}
+
 /* End Navbar */
 /* Sidebar */
 .sidebar {
@@ -532,6 +534,7 @@ ul {
   font-size: 1rem;
 }
 .contact-form {
+  margin-top: 4rem;
   background: rgba(255, 251, 202, 0.659);
   border-radius: 1rem;
   text-align: center;
@@ -573,5 +576,22 @@ ul {
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+  }
+  .contact-form {
+    margin-top: 0;
+  }
+  .contact-title {
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
 }
 /* End Contact Section */
