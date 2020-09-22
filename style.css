@@ -191,10 +191,11 @@ ul {
 }
 .sidebar-links {
   text-align: center;
+  margin-top: 3rem;
 }
 
 .sidebar-links a {
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   transition: var(--MainTransition);
   color: white;
@@ -218,7 +219,7 @@ ul {
   position: absolute; /*Para poder Moverlo donde querramos*/
   top: 1rem;
   right: 1rem;
-  font-size: 3rem;
+  font-size: 4rem;
   background: transparent;
   cursor: pointer;
   border: transparent;
@@ -245,7 +246,7 @@ ul {
 .hero-info {
   transform: translateY(20%);
   font-size: 1.25rem;
-  color: white;
+  color: wheat;
   display: flex;
   flex-direction: column;
   align-items: center;
