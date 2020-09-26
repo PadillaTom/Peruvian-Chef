@@ -218,6 +218,7 @@ ul {
   display: inline-block;
   margin-bottom: 1.5rem;
 }
+
 .social-icons {
   margin-top: 3.5rem;
   display: flex;
@@ -288,11 +289,7 @@ ul {
 .hero-btn:hover {
   background-color: var(--MainColor);
 }
-@media screen and (min-width: 530px) {
-  .hero-info {
-    margin-bottom: 3.5rem;
-  }
-}
+
 @media screen and (min-width: 850px) {
   .hero-center {
     align-items: center;
