@@ -44,9 +44,11 @@ ul {
   }
 }
 .content-divider {
-  height: 0.4rem;
+  height: 0.25rem;
   background: linear-gradient(
     to left,
+    var(--MainColor),
+    rgb(197, 189, 175),
     var(--MainColor),
     rgb(197, 189, 175),
     var(--MainColor),
