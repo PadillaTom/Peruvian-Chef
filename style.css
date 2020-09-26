@@ -657,6 +657,7 @@ ul {
 /* End Contact Section */
 /* Footer */
 .footer-container {
+  border-top: 0.25px solid #fafafa75;
   background: linear-gradient(
     to bottom,
     rgb(29, 24, 24),
