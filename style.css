@@ -60,7 +60,7 @@ ul {
   --SecondaryColor: wheat;
   --MainGrey: #313030;
   --MainTransition: 0.3s linear all;
-  --BgColor: #e4e4da;
+  --BgColor: #fafafa;
 }
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* Navbar */
@@ -195,18 +195,19 @@ ul {
   height: 100%; /* Ocupe todo */
   background-color: var(--MainGrey);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   /* Animation */
   transition: 0.5s ease-in-out all;
   transform: translateX(-100%);
   z-index: 1;
 }
+.gallery-none-mobile {
+  display: none;
+}
 .sidebar-links {
   text-align: center;
-  margin-top: 3rem;
 }
-
 .sidebar-links a {
   font-size: 2rem;
   text-transform: uppercase;
@@ -216,13 +217,13 @@ ul {
   margin-bottom: 1.5rem;
 }
 .social-icons {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
   display: flex;
   justify-content: space-evenly;
 }
 .social-icon {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   transition: 0.2s ease all;
 }
 .social-icon:hover {
@@ -326,13 +327,16 @@ ul {
 }
 .about-btn {
   color: var(--MainColor);
-  font-size: 2rem;
-  letter-spacing: 0.7rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
   transition: var(--MainTransition);
-  margin-top: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
   padding: 0.7rem 1rem;
   border: 1px solid var(--MainColor);
   border-radius: 1rem;
+  width: 60%;
 }
 .about-btn:hover {
   background-color: var(--MainColor);
@@ -480,25 +484,26 @@ ul {
 .news-info h4 {
   color: #313030;
   text-align: center;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.15rem;
 }
 .submit {
   text-align: center;
 }
 .news-input {
-  padding: 0.3rem;
-  border: 1px solid rgb(202, 172, 116);
+  padding: 0.5rem;
+  border: 1px solid rgb(135, 134, 133);
   color: #272727;
 }
 .btn-news {
-  padding: 0.2rem 2rem;
+  padding: 0.35rem 1.5rem;
   margin: 1rem;
   border: 1px solid var(--MainColor);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   color: var(--MainColor);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.33);
 }
 @media screen and (min-width: 768px) {
   .newsletter {
@@ -557,6 +562,9 @@ ul {
 .contact-info {
   margin: 1rem 0;
 }
+.contact-info {
+  margin-bottom: 5rem;
+}
 .contact-form {
   margin-bottom: 8em;
 }
@@ -569,13 +577,13 @@ ul {
 }
 .contact-text {
   text-transform: uppercase;
-  color: wheat;
+  color: white;
   letter-spacing: 2px;
   font-size: 1rem;
 }
 .contact-form {
   margin-top: 4rem;
-  background: rgba(255, 251, 202, 0.659);
+  background: var(--BgColor);
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -595,13 +603,13 @@ ul {
 .inp-control {
   display: block;
   width: 100%;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 1rem;
   border: none;
   margin-bottom: 1.25rem;
-  background: rgba(255, 253, 249, 0.748);
   border-radius: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
+  background-color: rgba(202, 201, 201, 0.207);
 }
 .btn-form {
   display: block;
@@ -612,7 +620,7 @@ ul {
   border: none;
   background: var(--MainColor);
   color: white;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: 3px;
   text-transform: uppercase;
