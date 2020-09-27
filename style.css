@@ -256,7 +256,7 @@ ul {
     url('../Resources/chef4.jpg') center/cover fixed no-repeat;
 }
 .hero-center {
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
   place-items: center;
 }
@@ -336,7 +336,7 @@ ul {
   letter-spacing: 0.35rem;
   transition: var(--MainTransition);
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 0.7rem 1rem;
   border: 1px solid var(--MainColor);
   border-radius: 1rem;
@@ -416,7 +416,7 @@ ul {
   margin: 3rem 0;
   background-color: var(--BgColor);
   border-radius: 0.5rem;
-  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.35);
   transition: var(--MainTransition);
 }
 .plat-card:hover {
@@ -424,7 +424,7 @@ ul {
   box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.6);
 }
 .plat-img {
-  height: 17rem;
+  height: 15rem;
   -o-object-fit: cover;
   object-fit: cover;
   border-top-left-radius: 0.5rem;
